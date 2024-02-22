@@ -4,7 +4,7 @@ body {
     padding: 25px;
     font-family: sans-serif;
 
-/* nav crumbs */
+/* nav crumbs 
     nav {
       border-bottom: 1px solid black;
     }
@@ -26,6 +26,34 @@ body {
       font-weight: bold;
       padding: 0 3px;
     }
+*/
+    /* tabs*/
+.tabcontent {
+  display: none;
+}
+
+/* Style of tab buttons */
+.tablinks {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+/* Style the active tab button */
+.tablinks.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 20px;
+}
+
     
   }
   
