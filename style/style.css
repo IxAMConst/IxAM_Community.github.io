@@ -3,13 +3,25 @@ body {
     color: #fff;
     padding: 25px;
     font-family: sans-serif;
+    background-image: url('images\shores.jpg');
+    overflow: scroll;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
 
+<<<<<<< Updated upstream
 /* nav crumbs 
+=======
+ /*crumbs*\
+  crumbs 
+>>>>>>> Stashed changes
     nav {
       border-bottom: 1px solid black;
     }
     
-    .crumbs ol {
+/*.crumbs ol {
       list-style-type: none;
       padding-left: 0;
     }
@@ -26,7 +38,13 @@ body {
       font-weight: bold;
       padding: 0 3px;
     }
+<<<<<<< Updated upstream
 */
+=======
+?* end of crumbs */
+
+
+>>>>>>> Stashed changes
     /* tabs*/
 .tabcontent {
   display: none;
@@ -35,13 +53,22 @@ body {
 /* Style of tab buttons */
 .tablinks {
   background-color: #f2f2f2;
+<<<<<<< Updated upstream
   border: none;
   padding: 8px 16px;
+=======
+  border: solid;
+  padding: 12px 16px;
+>>>>>>> Stashed changes
   cursor: pointer;
 }
 
 .tablinks:hover {
+<<<<<<< Updated upstream
   background-color: #ddd;
+=======
+  background-color: #f10bd3;
+>>>>>>> Stashed changes
 }
 
 /* Style the active tab button */
@@ -55,5 +82,5 @@ body {
 }
 
     
-  }
+  
   
