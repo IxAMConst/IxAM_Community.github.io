@@ -1,4 +1,4 @@
-author {IxAM_Lucifer}
+author {'IxAM_Lucifer'}
 
 Building a website for my upcoming shift in career which will 
 eventually server as my first real master piece of my portfolio
