@@ -1,47 +1,15 @@
 body {
+    background-image: url('../images/shores.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     background: #dda0dd;
     color: #fff;
-    padding: 25px;
-    font-family: sans-serif;
-    background-image: url('images\shores.jpg');
-    overflow: scroll;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+    
   }
 
- /*crumbs*\ 
-    nav {
-      border-bottom: 1px solid black;
-    }
-    
-/*.crumbs ol {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    
-    .crumb {
-      display: inline-block;
-    }
-    
-    .crumb a::after {
-      display: inline-block;
-      color: #030303;
-      content: '>';
-      font-size: 80%;
-      font-weight: bold;
-      padding: 0 3px;
-    }
-?* end of crumbs */
-
-
     /* tabs*/
-.tabcontent {
-  display: none;
-}
 
-/* Style of tab buttons */
 .tablinks {
   background-color: #f2f2f2;
   border: solid;
@@ -54,15 +22,27 @@ body {
   background-color: #f10bd3;
 }
 
-/* Style the active tab button */
+
 .tablinks.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-.tabcontent {
-  padding: 20px;
+.heading {
+  border: solid;
+  align-items: center;
+
 }
+
+.information {
+  width: 100%;
+  height: 400px;
+  background-image:linear-gradient(to right, rgb(115, 30, 82), rgba(111, 19, 209, 0));
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   .container {
