@@ -33,3 +33,16 @@ body {
     background-repeat: no-repeat;
     background-position: right;
   }
+
+  @media only screen and (min-width: 768px) {
+    .container {
+        width: 70%; /* Adjust as needed */
+    }
+    /* Add more desktop-specific styles here */
+  }   
+    
+  @media only screen and (max-width: 767px) {
+    .container {
+        width: 90%; /* Adjust as needed */
+    }
+  }
