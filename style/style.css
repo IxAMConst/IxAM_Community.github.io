@@ -1,17 +1,34 @@
 body {
   background: url('../images/shores.jpg') no-repeat center / cover;
   font-size: 18px;
-  
-  
+  background-color: pink;
   }
 /*use rem instead of px for font-size
 use em for paddings/margins*/
 .heading {
+  animation: animate 5s linear 3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-family: "Dancing Script", cursive;
+  font-size: 4em;
   text-shadow: 1px 1px 2px rgb(0, 153, 255);
-  border: solid;
   color: azure;
-  margin: 100px 350px 20px;
+  
+  margin: 100px 150px 20px;
+}
+
+@keyframes animate {
+  from {
+    color:#ffee02;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 20px
+    rgb(255, 255, 255), 0px 0px 50px rgb(255, 255, 255), 0px 0px 100px
+    rgb(255, 255, 255),0px 0px 200px rgb(255, 255, 255), 0px 0px 350px rgb(255, 255, 255);
+    filter: blur(2px);
+  }
+  to {
+    color:aqua
+  }
 }
 
 .underHead {
@@ -19,10 +36,14 @@ use em for paddings/margins*/
   justify-content: center;
   font-family: "Lobster", sans-serif;
   background:url('../images/universe.jpg') no-repeat center / cover;
+  opacity: 50%;
 }
 
 
   .tablinks {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
