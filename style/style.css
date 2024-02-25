@@ -1,13 +1,27 @@
 body {
-  background: #dda0dd url('../images/shores.jpg') no-repeat center / cover;
-  /*max-width:600px*/
+  background: url('../images/shores.jpg') no-repeat center / cover;
+  font-size: 18px;
+  
+  
   }
 /*use rem instead of px for font-size
 use em for paddings/margins*/
 .heading {
   font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px 2px rgb(0, 153, 255);
   border: solid;
+  color: azure;
+  margin: 100px 350px 20px;
 }
+
+.underHead {
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", sans-serif;
+  background:url('../images/universe.jpg') no-repeat center / cover;
+}
+
+
   .tablinks {
     border: 0;
     line-height: 2.5;
@@ -17,7 +31,7 @@ use em for paddings/margins*/
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: rgb(117, 112, 184);
+    background-color: rgb(117, 112, 184); 
     background-image: linear-gradient(
       to top left,
       rgba(0, 0, 0, 0.2),
@@ -31,7 +45,7 @@ use em for paddings/margins*/
   
   
   .tablinks:hover {
-    background-color: #f10bd3;
+    background-color: #9bd2db;
   }
   
   
@@ -39,25 +53,44 @@ use em for paddings/margins*/
     background-color: #ccc;
   }
   
- 
-  
+
   .information {
+    margin: 30px 0px 0px;
+    display: flex;
     width: 100%;
     height: 400px;
-    background-image:linear-gradient(to right, rgb(115, 30, 82), rgba(111, 19, 209, 0));
+    background-image:url('../images/friends_campfire.jpg');/*, linear-gradient(to right, rgb(126, 245, 245), rgba(193, 156, 231, 0));*/
     background-repeat: no-repeat;
     background-position: right;
+    overflow: scroll;
+    scrollbar-color: red ;
   }
 
-  @media only screen and (min-width: 768px) {
-    .container {
-        width: 70%; /* Adjust as needed */
+  .leftchapter {
+    color:rgb(5, 4, 1);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgb(201, 132, 195)
+  }
+
+  .rightchapter {
+    font-size: 2rem;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px rgb(88, 186, 224), 0 0 1em rgb(88, 186, 224), 0 0 0.2em blue;
+  }
+  
+
+  a[href^='mailto']::before {
+    content: '📭 ';
+  }
+  
+  a[href^='tel']::before {
+    content: '🤳🏾 ';
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px {
+    .body {
+        width: 100%; /* Adjust as needed */
     }
     /* Add more desktop-specific styles here */
   }   
     
-  @media only screen and (max-width: 767px) {
-    .container {
-        width: 90%; /* Adjust as needed */
-    }
-  }
