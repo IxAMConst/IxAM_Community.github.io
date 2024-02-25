@@ -31,7 +31,7 @@ use em for paddings/margins*/
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: rgb(117, 112, 184); 
+    background-color: rgb(13, 235, 217); 
     background-image: linear-gradient(
       to top left,
       rgba(0, 0, 0, 0.2),
@@ -53,6 +53,23 @@ use em for paddings/margins*/
     background-color: #ccc;
   }
   
+  
+
+  @keyframes bounce {
+    from {
+      margin-bottom: 100% 
+    }
+    to { 
+      margin-top: 0%;
+    }
+  }
+
+  .anim {
+    color:rgb(2, 1, 3);
+    text-shadow: #9bd2db;
+    animation: bounce 3s 1 ease-in-out ;
+  } 
+
 
   .information {
     margin: 30px 0px 0px;
@@ -67,6 +84,7 @@ use em for paddings/margins*/
   }
 
   .leftchapter {
+    animation: 3s ease-in 1s infinite reverse both running slidein;
     color:rgb(5, 4, 1);
     font-size: 1.5rem;
     text-shadow: 1px 1px 2px rgb(201, 132, 195)
@@ -78,6 +96,10 @@ use em for paddings/margins*/
     text-shadow: 1px 1px 2px rgb(88, 186, 224), 0 0 1em rgb(88, 186, 224), 0 0 0.2em blue;
   }
   
+  .contactinfo {
+    align-items: center;
+    
+  } 
 
   a[href^='mailto']::before {
     content: '📭 ';
@@ -87,7 +109,7 @@ use em for paddings/margins*/
     content: '🤳🏾 ';
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body {
         width: 100%; /* Adjust as needed */
     }
