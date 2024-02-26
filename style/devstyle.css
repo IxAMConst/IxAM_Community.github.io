@@ -1,0 +1,39 @@
+body {
+    background: url('../images/matrix.jpg') no-repeat center / cover;
+
+
+}
+
+.develop {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  } 
+
+  a[href^='mailto']::before {
+    content: '📭 ';
+  }
+  
+  a[href^='tel']::before {
+    content: '🤳🏾 ';
+  }

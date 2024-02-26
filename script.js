@@ -17,6 +17,4 @@ function openTab(evt, tabName) {
     evt.currentTarget.classList.add("active");
   }
   
-  // Open the default tab on page load
-  document.getElementById("defaultOpen").click();
-  
+ 
