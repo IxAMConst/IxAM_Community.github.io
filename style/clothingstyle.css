@@ -1,0 +1,20 @@
+body {
+    background: url('../images/sewingi.png') no-repeat center / cover;
+    color: pink;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  } 
+
+  a[href^='mailto']::before {
+    content: '📭 ';
+  }
+  
+  a[href^='tel']::before {
+    content: '🤳🏾 ';
+  }
