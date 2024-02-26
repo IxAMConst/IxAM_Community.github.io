@@ -1,3 +1,5 @@
+
+console.log('You have executed software developed by IxAM LLC, IxAM Const thank you for being apart of our journey')
 // Function to open a specific tab
 function openTab(evt, tabName) {
     // Get all elements with class="tabcontent" and hide them

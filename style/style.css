@@ -35,8 +35,10 @@ use em for paddings/margins*/
   display: flex;
   justify-content: start;
   font-family: "Lobster", sans-serif;
-  background: pink;
+  background:  radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69c3c5b);
+  border-radius: 20px;
   margin: 10px 200px 50px;
+  
 }
 
 
@@ -130,7 +132,7 @@ use em for paddings/margins*/
     content: '🤳🏾 ';
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 1080px) {
+  @media only screen and (min-device-width: 100px) and (max-device-width: 1080px) {
     .body {
          /* Adjust as needed */
     }
