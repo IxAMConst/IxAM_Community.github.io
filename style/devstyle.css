@@ -1,7 +1,7 @@
 body {
     background: url('../images/matrix.jpg') no-repeat center / cover;
     color: white;
-
+    text-rendering: optimizeLegibility;
 }
 .tablinks {
   display:inline-block;
@@ -39,14 +39,63 @@ body {
 
 .headertwo {
   text-shadow:0px 1px 0px #09f544,
-  0px 1px 10px #09f544
+  0px 1px 10px #09f544;
 }
 .develop {
     color: white;
+    text-decoration: underline #28ff28;
+    font-family: "Dancing Script", cursive;
+    text-shadow: 10px 10px 10px rgb(7, 52, 202),
+    20px 20px 20px rgb(7, 52, 202);
+
+}
+
+
+  
+
+.underDev {
+  display: flex;
+  justify-content: ;
+  font-family: "Lemon", serif;
+  
 }
 
 
 
+.boxone {
+  
+  text-align: center;
+  border-radius: 25% 10%;
+  width: 150px;
+  height: 70px;
+  background: #206b1e;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  border: solid rgb(188, 218, 188);
+}
+.boxone::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 200px;
+  color: rgb(0, 255, 0);
+  top: 50%;
+  left: calc(100% + 10px);
+  translate: 0 -50%;
+  background: black;
+  display: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.boxone:hover::before {
+  display: block;
+  
+}
+
+
+a {
+  color: aqua;
+}
 
 
 
@@ -64,11 +113,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-size: 1.25em;
+    color: aqua;
   } 
 
   a[href^='mailto']::before {
     content: '📭 ';
+    
   }
   
   a[href^='tel']::before {
