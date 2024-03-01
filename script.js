@@ -1,5 +1,5 @@
 
-onsole.log('You have executed software developed by IxAM LLC, IxAM Const thank you for being apart of our journey')
+console.log('You have executed software developed by IxAM LLC, IxAM Const thank you for being apart of our journey')
 // Function to open a specific tab
 function openTab(evt, tabName) {
     // Get all elements with class="tabcontent" and hide them
@@ -21,14 +21,39 @@ function openTab(evt, tabName) {
   console.log('Prepartory events Developed by IxAM Const have been execute');
  
   
-const letters = document.getElementById('changeMe');
+/*const letters = document.getElementById('changeMe');
 
-const boxone = document.getElementById('boxChange');
+const boxOne = document.getElementsByName('boxChange');
 
-boxone.addEventListener('click', () =>{
+boxOne.addEventListener('click', () => {
   if(box.style.background === 'green') {
    box.style.background = 'blue'
 } else {
    box.style.background = 'green'
  }
+});*/
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  let boxOnes = document.querySelectorAll('#boxOne');
+  
+  boxOnes.forEach(boxOne => {
+      boxOne.addEventListener('click', () => {
+          toggleBackgroundColor(boxOne);
+      });
+  });
+  
+  function toggleBackgroundColor(boxOne) {
+      let computedStyle = getComputedStyle(boxOne);
+      let backgroundColor = computedStyle.backgroundColor;
+
+      if (backgroundColor === 'rgb(0, 128, 0)') {
+          boxOne.style.backgroundColor = 'blue';
+      } else {
+          boxOne.style.backgroundColor = 'green';
+      }
+  }
 });
+

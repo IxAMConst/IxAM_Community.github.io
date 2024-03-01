@@ -55,26 +55,24 @@ body {
 
 .underDev {
   display: flex;
-  justify-content: ;
   font-family: "Lemon", serif;
   
 }
 
 
-
-.boxone {
+#boxOne {
   
   text-align: center;
   border-radius: 25% 10%;
   width: 150px;
   height: 70px;
-  background: #206b1e;
+  background: green;
   margin: 10px;
   position: relative;
   cursor: pointer;
   border: solid rgb(188, 218, 188);
 }
-.boxone::before {
+#boxOne::before {
   content: attr(data-tooltip);
   position: absolute;
   width: 200px;
@@ -87,7 +85,7 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
-.boxone:hover::before {
+#boxOne:hover::before {
   display: block;
   
 }
