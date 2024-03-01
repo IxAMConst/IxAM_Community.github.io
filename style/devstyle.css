@@ -175,3 +175,15 @@ a[href^='mailto']::before {
 a[href^='tel']::before {
   content: '🤳🏾 ';
 }
+
+@media only screen and (max-width: 768px) {
+  /* mutable until perfected for phones*/
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* mutable until perfected for ipads and some laptops*/
+}
+
+@media only screen and (min-width: 1025px) {
+  /*for desktops*/
+}

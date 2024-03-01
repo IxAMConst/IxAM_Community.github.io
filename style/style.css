@@ -133,10 +133,15 @@ use em for paddings/margins*/
     content: '🤳🏾 ';
   }
 
-  @media only screen and (min-device-width: 100px) and (max-device-width: 1080px) {
-    .body {
-         /* Adjust as needed */
-    }
-    /* Add more desktop-specific styles here */
-  }   
-    
+  @media only screen and (max-width: 768px) {
+    /* mutable until perfected for phones*/
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* mutable until perfected for ipads and some laptops*/
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /*for desktops*/
+  }
+  
