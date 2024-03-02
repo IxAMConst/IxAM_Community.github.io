@@ -7,16 +7,18 @@ body {
 /*use rem instead of px for font-size
 use em for paddings/margins*/
 .heading {
+  width: 100%;
+  min-height: 200px;
+  max-height: 450px;
   animation: animate 5s linear 3;
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 4em;
-  text-shadow: 1px 1px 2px rgb(0, 153, 255);
+  text-shadow: 1px 1px 20px rgb(229, 255, 0);
   color: azure;
-  
-  margin: 100px 150px 20px;
+  margin: 100px 0px 65px;
 }
 
 @keyframes animate {
@@ -32,14 +34,20 @@ use em for paddings/margins*/
   }
 }
 
-.underHead {
+p {
   display: flex;
-  justify-content: start;
+  min-width: 320px;
+  max
+}
+
+.underHead {
+  min-width: 320px;
+  max-width: fit-content;
+  max-height: 50em;
   font-family: "Lobster", sans-serif;
   background:  radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69c3c5b);
   border-radius: 20px;
-  margin: 10px 200px 50px;
-  
+  margin: 10px 0px 0px; 
 }
 
 
@@ -104,7 +112,7 @@ use em for paddings/margins*/
     background-repeat: no-repeat;
     background-position: right;
     overflow: scroll;
-    scrollbar-color: red ;
+    scrollbar-color: red;
   }
 
   .leftchapter {
@@ -134,7 +142,8 @@ use em for paddings/margins*/
   }
 
   @media only screen and (max-width: 768px) {
-    /* mutable until perfected for phones*/
+  
+    
   }
   
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -142,6 +151,6 @@ use em for paddings/margins*/
   }
   
   @media only screen and (min-width: 1025px) {
-    /*for desktops*/
+   
   }
   
