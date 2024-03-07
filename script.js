@@ -1,4 +1,10 @@
-
+   /**
+     * * important
+     * ? maybes?
+     * ! yikes
+     * TODO:
+     *  @param myparameter
+    */
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,3 +48,5 @@ const navWidth = document.querySelector('nav').offsetWidth;
     animatedBackground();
 
     console.log('let me cook, IxAM Const')
+
+//? add an animation

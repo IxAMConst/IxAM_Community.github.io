@@ -1,4 +1,10 @@
-
+   /**
+     * *important
+     * ? maybes?
+     * ! yikes
+     * TODO:
+     * @param myparameter
+    */
 
 body {
   padding: 20px;
@@ -6,6 +12,7 @@ body {
   color: white;
   text-rendering: optimizeLegibility;
 }
+
 
 
 nav {
@@ -37,11 +44,7 @@ nav span {
 position: absolute;
 top: 0;
 left: 0;
-<<<<<<< HEAD
 width: 10%;
-=======
-width: 110px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
 height: 100%;
 background: linear-gradient(45deg, #0731ee, #bef106);
 border-radius: 8px;
@@ -50,100 +53,56 @@ transition: .5s;
 
 nav a:nth-child(1):hover ~ span 
   {
-  transform: translateY(0%);
-  width: 100%;
+  left: 0%;
+  width: 10%;
   }
 
 nav a:nth-child(2):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(18%);
-
-=======
-  left: 110px;
-  width: 65px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
+  left: 9%;
   }
 
 nav a:nth-child(3):hover ~ span 
   {
-<<<<<<< HEAD
   left: 20%;
   width: 12%px;
-=======
-  left: 175px;
-  width: 90px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
   }
 
 nav a:nth-child(4):hover ~ span 
   {
-<<<<<<< HEAD
-    left: 30%;
-=======
-  left: 270px;
-  width: 100px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
+  left: 30%;
   }
 
 nav a:nth-child(5):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(10%);
-=======
-  left: 375px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
-  width: 80px;
+  left: 39%;
   }
         
 nav a:nth-child(6):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(18%);
-=======
-  left: 465px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
-  width: 120px;
+  left: 48%;
   }
         
 nav a:nth-child(7):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(25%);
-=======
-  left: 580px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
-  width: 95px;
+  left: 60%;
   }
         
 nav a:nth-child(8):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(35%);
-  width: 100%;
-=======
-  left: 675px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
+    left: 68%;
   }
 
 nav a:nth-child(9):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(55%);
-=======
-  left: 787px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
-  width: 130px;
+    left: 80%;
+    width: 9%;
   }
         
 nav a:nth-child(10):hover ~ span 
   {
-<<<<<<< HEAD
-  transform: translateY(75%);
-=======
-  left: 940px;
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
-  width: 60px;
+  left: 90%;
+  width: 10%;
   }  
 
 .headertwo {
@@ -221,7 +180,6 @@ a[href^='tel']::before {
 }
 /* ----------------------------------------------------------------------staryt of screen sizing for mobile devices--------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
 
   
     nav span {
@@ -230,7 +188,7 @@ a[href^='tel']::before {
       left: 0;
       width: 12%;
       height: 10%;
-      background: linear-gradient(45deg, #0731ee, #bef106);
+      background: none;
       border-radius: 8px;
       transition: .5s;
       }
@@ -244,6 +202,7 @@ a[href^='tel']::before {
     margin: 10% 10% 10%;
   }
   nav {
+    background: none;
     width: auto;
     display:inline-block;
     justify-content: center;
@@ -282,12 +241,6 @@ nav a:nth-child(3):hover ~ span
 
     
 
-=======
-  nav a {
-    width: 100%;
-  }
-  
->>>>>>> 3187ac819eb28a7dd5191c8de4bb29b98c763fd4
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
