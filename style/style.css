@@ -37,7 +37,7 @@ use em for paddings/margins*/
 p {
   display: flex;
   min-width: 320px;
-  max
+  
 }
 
 .underHead {

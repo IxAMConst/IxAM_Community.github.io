@@ -23,3 +23,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 console.log('style changed execution, IxAM Const')
 
+const animatedBg = document.getElementById('animated-bg');
+const navWidth = document.querySelector('nav').offsetWidth;
+
+    let leftPosition = 0;
+    let direction = 1;
+
+    const animatedBackground = () => {
+            if (leftPosition >= navWidth - (navWidth * 0.12)) {
+            direction = -1;
+        } else if (leftPosition <= 0) {
+            direction = 1;
+        }
+         leftPosition += direction;
+         animatedBg.style.left = leftPosition = 'px';
+         requestAnimationFrame(animatedBackground);   
+    }
+    animatedBackground();
+
+    console.log('let me cook, IxAM Const')
