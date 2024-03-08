@@ -249,6 +249,22 @@ nav a:nth-child(3):hover ~ span
     
 
 }
+@keyframes bounce {
+  from {
+    margin-bottom: 100% 
+  }
+  to { 
+    margin-top: 0%;
+  }
+}
+
+.anim {
+  color:rgb(2, 1, 3);
+  text-shadow: #9bd2db;
+  animation: bounce 3s 1 ease-in-out;
+}
+
+
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* mutable until perfected for ipads and some laptops*/
