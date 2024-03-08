@@ -6,6 +6,7 @@ body {
   }
 /*use rem instead of px for font-size
 use em for paddings/margins*/
+
 .heading {
   width: 100%;
   min-height: 200px;
@@ -18,7 +19,7 @@ use em for paddings/margins*/
   font-size: 4em;
   text-shadow: 1px 1px 20px rgb(229, 255, 0);
   color: azure;
-  margin: 100px 0px 65px;
+  margin: 25px 0px 65px;
 }
 
 @keyframes animate {
@@ -34,6 +35,21 @@ use em for paddings/margins*/
   }
 }
 
+@keyframes bounce {
+  from {
+    margin-bottom: 100% 
+  }
+  to { 
+    margin-top: 0%;
+  }
+}
+
+.anim {
+  color:rgb(2, 1, 3);
+  text-shadow: #9bd2db;
+  animation: bounce 3s 1 ease-in-out;
+}
+
 p {
   display: flex;
   min-width: 320px;
@@ -41,66 +57,114 @@ p {
 }
 
 .underHead {
+  margin: 50px 150px 0px;
   min-width: 320px;
   max-width: fit-content;
   max-height: 50em;
   font-family: "Lobster", sans-serif;
   background:  radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69c3c5b);
   border-radius: 20px;
-  margin: 10px 0px 0px; 
+   
 }
 
 
-  .tablinks {
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(13, 235, 217); 
-    background-image: linear-gradient(
-      to top left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2) 30%,
-      rgba(0, 0, 0, 0)
-  );
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+nav {
+  font-family: "Lemon", serif;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  background: rgb(2, 247, 226);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  border: rgba(75, 85, 224, 0.63) solid;
   }
   
+  nav a {
+    font-family: "Lobster", sans-serif;
+    width: 90%;
+    margin: 0px 20px 0px;
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 1px;
+    z-index: 1;
+    }
   
-  .tablinks:hover {
-    background-color: #9bd2db;
+  nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(45deg, #e7e9f3, #0380f5);
+  border-radius: 8px;
+  transition: .5s;
+  
   }
   
+  nav a:nth-child(1):hover ~ span 
+    {
+    left: 0%;
+    width: 10%;
+    }
   
-  .tablinks.active {
-    background-color: #ccc;
-  }
+  nav a:nth-child(2):hover ~ span 
+    {
+    left: 9%;
+    }
+  
+  nav a:nth-child(3):hover ~ span 
+    {
+    left: 20%;
+    width: 12%px;
+    }
+  
+  nav a:nth-child(4):hover ~ span 
+    {
+    left: 30%;
+    }
+  
+  nav a:nth-child(5):hover ~ span 
+    {
+    left: 39%;
+    }
+          
+  nav a:nth-child(6):hover ~ span 
+    {
+    left: 48%;
+    }
+          
+  nav a:nth-child(7):hover ~ span 
+    {
+    left: 60%;
+    }
+          
+  nav a:nth-child(8):hover ~ span 
+    {
+      left: 68%;
+      color: purple;
+    }
+  
+  nav a:nth-child(9):hover ~ span 
+    {
+      left: 80%;
+      width: 9%;
+    }
+          
+  nav a:nth-child(10):hover ~ span 
+    {
+    left: 90%;
+    width: 10%;
+    }  
   
   
 
-  @keyframes bounce {
-    from {
-      margin-bottom: 100% 
-    }
-    to { 
-      margin-top: 0%;
-    }
-  }
-
-  .anim {
-    color:rgb(2, 1, 3);
-    text-shadow: #9bd2db;
-    animation: bounce 3s 1 ease-in-out;
-  } 
+   
 
 
   .information {
@@ -108,9 +172,6 @@ p {
     display: flex;
     width: 100%;
     height: 400px;
-    background-image:url('../images/friends_campfire.jpg');/*, linear-gradient(to right, rgb(126, 245, 245), rgba(193, 156, 231, 0));*/
-    background-repeat: no-repeat;
-    background-position: right;
     overflow: scroll;
     scrollbar-color: red;
   }
@@ -126,6 +187,7 @@ p {
     font-size: 2rem;
     flex-wrap: wrap;
     text-shadow: 1px 1px 2px rgb(88, 186, 224), 0 0 1em rgb(88, 186, 224), 0 0 0.2em blue;
+    margin: 25px 150px 0px;
   }
   
   .contactinfo {
@@ -142,7 +204,60 @@ p {
   }
 
   @media only screen and (max-width: 768px) {
+    nav span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12%;
+      height: 10%;
+      background: none;
+      border-radius: 8px;
+      transition: .5s;
+      }
+    
+
+  a {
+    height: 25px;
+    background-color: rgb(0, 132, 255);
+    border: rgb(255, 255, 255) solid;
+    border-radius: 8px;
+    margin: 10% 10% 10%;
+  }
+  nav {
+    background: none;
+    width: auto;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+  }
+  nav a:nth-child(1):hover ~ span 
+  {
+  transform: translateY(5%);
   
+  }
+
+nav a:nth-child(2):hover ~ span 
+  {
+    transform: translateX(0%) rotate(10deg) translateY(5px);
+ 
+ /*   transform: translateY(15%);
+  width: 12%;
+  height: 10%;*/
+
+  }
+
+nav a:nth-child(3):hover ~ span 
+  {
+ transform: translateY(25%);
+  }
     
   }
   
