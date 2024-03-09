@@ -57,6 +57,8 @@ p {
 }
 
 .underHead {
+  display: flex;
+  justify-self: center;
   margin: 50px 150px 0px;
   min-width: 320px;
   max-width: fit-content;

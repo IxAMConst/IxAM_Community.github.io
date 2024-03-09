@@ -127,12 +127,14 @@ text-shadow:0px 1px 0px #09f544,
 }
 
 .underDev {
+color: white;
 display: flex;
 font-family: "Lemon", serif;
 }
 
 
 #boxOne {
+color: white;
 text-align: center;
 border-radius: 25% 10%;
 width: 150px;

@@ -24,6 +24,7 @@ nav {
   }
   
   nav a {
+    font-size: 3em;
     width: 90%;
     margin: 0px 20px 0px;
     position: relative;
