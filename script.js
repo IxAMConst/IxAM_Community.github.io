@@ -6,7 +6,7 @@
      *  @param myparameter
     */
 
-
+// * dev nav span animation
 document.addEventListener('DOMContentLoaded', function() {
   let boxOnes = document.querySelectorAll('#boxOne');
   
@@ -51,7 +51,7 @@ animatedBackground();
 print('IxAM Const animation exe');
 
 
-//* heading style color change
+//* dev  style color change
 
 let navA = document.querySelectorAll('.tablinks');
 // foreach method, when navA is clicked callback
@@ -74,7 +74,7 @@ navA.forEach(navA => {
 
 
 
-
+// * dev heading color change event
 
 let heading = document.querySelector('.develop');
 heading.onclick = function() {
@@ -93,3 +93,24 @@ heading.onclick = function() {
     }
     console.log('dev heading code exe');
 }
+
+
+// * index underhead color changes
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let mouseoverElement = document.getElementById('mouseOver');
+
+    if (mouseoverElement) {
+        mouseoverElement.addEventListener('mouseover', function() {
+            mouseoverElement.style.opacity = 1;
+        });
+
+        mouseoverElement.addEventListener('mouseout', function() {
+            mouseoverElement.style.opacity = 0;
+        });
+    } else {
+        console.error("Element with ID 'mouseOver' not found.");
+    }
+});
