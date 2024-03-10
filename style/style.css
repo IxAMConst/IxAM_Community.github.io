@@ -54,7 +54,8 @@ use em for paddings/margins*/
   color: purple;
   display: flex;
   justify-self: center;
-  margin: 0px 175px 0px;
+  text-align: center;
+  margin: 0px 150px 0px;
   min-width: 320px;
   max-width: fit-content;
   max-height: 50em;
@@ -69,9 +70,6 @@ use em for paddings/margins*/
   opacity: 0;
   justify-content: center;
   margin: 0px 350px 0px;
-  min-width: 320px;
-  max-width: fit-content;
-  max-height: 50em;
   font-size: 2em;
   font-family: "Lobster", sans-serif;
   background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69c3c5b);
