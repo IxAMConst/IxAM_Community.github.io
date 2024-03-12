@@ -1,0 +1,105 @@
+body {
+    color: white;
+    background: no-repeat url('../images/IxAM_Logo.PNG');
+    background-color: rgb(184, 93, 219);
+    background-position-y: 0%;
+    font-family: "Anton", sans-serif;
+}
+
+nav {
+    font-family: "Lemon", serif;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border: rgba(75, 85, 224, 0.63) solid;
+  }
+  
+  nav a {
+    font-family: "Lobster", sans-serif;
+    width: 90%;
+    margin: 0px 20px 0px;
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 1px;
+    z-index: 1;
+  }
+  
+  nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(45deg, #e7e9f3, #ff0239);
+    border-radius: 8px;
+    transition: 1s;
+  }
+  
+  nav a:nth-child(1):hover ~ span {
+    left: 0%;
+    width: 10%;
+  }
+  
+  nav a:nth-child(2):hover ~ span {
+    left: 9%;
+  }
+  
+  nav a:nth-child(3):hover ~ span {
+    left: 20%;
+    width: 12%;
+  }
+  
+  nav a:nth-child(4):hover ~ span {
+    left: 30%;
+  }
+  
+  nav a:nth-child(5):hover ~ span {
+    left: 39%;
+  }
+  
+  nav a:nth-child(6):hover ~ span {
+    left: 48%;
+  }
+  
+  nav a:nth-child(7):hover ~ span {
+    left: 60%;
+  }
+  
+  nav a:nth-child(8):hover ~ span {
+    left: 68%;
+    color: purple;
+  }
+  
+  nav a:nth-child(9):hover ~ span {
+    left: 80%;
+    width: 9%;
+  }
+  
+  nav a:nth-child(10):hover ~ span {
+    left: 90%;
+    width: 10%;
+  }
+
+  #heading {
+    display: flex;
+    font-family: "Permanent Marker", sans-serif;
+    justify-content: center;
+    color: black;
+    font-size: 2.5em;
+    text-shadow: rgb(253, 253, 253) 1px 0 10px;
+  }
+
+  .testimonials {
+    overflow: scroll;
+  }
+
+  

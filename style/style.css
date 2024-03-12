@@ -199,6 +199,18 @@ a[href^="tel"]::before {
 }
 
 @media only screen and (max-width: 768px) {
+
+  #mouseOverChange {
+    color: rgb(17, 226, 122);
+    opacity: 0;
+    align-items: center;
+    margin: 0px 150px 0px;
+    font-size: 2em;
+    font-family: "Lobster", sans-serif;
+    background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #30ec495b);
+    border-radius: 8px;
+  }
+
   nav span {
     position: absolute;
     top: 0;
