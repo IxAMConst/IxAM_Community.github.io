@@ -99,7 +99,12 @@ nav {
   }
 
   .testimonials {
+    color: black;
     overflow: scroll;
+  }
+
+  .copyright {
+    text-align: center;
   }
 
   
