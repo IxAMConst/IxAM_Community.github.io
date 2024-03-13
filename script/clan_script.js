@@ -1,3 +1,12 @@
+/**
+ * * important
+ * ? maybes?
+ * ! yikes
+ * TODO:
+ *  @param myparameter
+ */
+
+// * heading color changes
 let headingTitles = document.querySelectorAll('h1');
 
 headingTitles.forEach(heading => {
@@ -12,3 +21,4 @@ headingTitles.forEach(heading => {
         }
     });
 });
+
