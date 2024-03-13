@@ -1,7 +1,7 @@
-let headingTitles = document.querySelectorAll('.heading');
+let headingTitles = document.querySelectorAll('h1');
 
-
-    heading.onclick = function() {
+headingTitles.forEach(heading => {
+    heading.addEventListener('mouseover', () => {
         let headingComputed = window.getComputedStyle(heading).color;
         if (headingComputed === 'rgb(0, 0, 0)' || headingComputed === 'black') {
             heading.style.color = 'red';
@@ -10,4 +10,5 @@ let headingTitles = document.querySelectorAll('.heading');
             heading.style.color = 'black';
             console.log('Color changed to black by IxAM');
         }
-    };
+    });
+});
