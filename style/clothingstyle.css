@@ -1,13 +1,17 @@
 body {
-    background:no-repeat center / cover url('../images/sewingi.png');
-    color: rgb(245, 47, 228);
-    font-size: 14px;
+  background-color: white;
+  color: rgb(245, 47, 228);
+    font-size: 16px;
+    transition: background-color 1s ease;
 }
 
-.branch {
+#clothingHeader {
   font-family: "Coiny", system-ui;
+  display: flex;
+  flex-direction: column;
+  margin-left: 38%;
   text-shadow: rgb(111, 0, 255) 10px 0 10px, rgb(111, 0, 255) 20px 10px 20px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -62,7 +66,7 @@ nav {
   nav a:nth-child(3):hover ~ span 
     {
     left: 20%;
-    width: 12%px;
+    width: 12%;
     }
   
   nav a:nth-child(4):hover ~ span 
@@ -102,9 +106,69 @@ nav {
     width: 10%;
     }  
 
+#wingsWithin {
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin: 5vh 15vh 0vh;
+}
 
+.wWImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 8px;
+  width: 45%;
+  height: 120px;
+  margin: 0 50px;
+}
 
+.wingsText {
+  font-size: 1.50em;
+}
 
+#purrfectGetups {
+  display: flex;
+  margin: 5vh 15vh 0vh;
+  flex-direction: row;
+}
+
+.getupsImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 8px;
+  width: 15%;
+  height: 100px;
+  margin: 0 50px;
+}
+
+.getupsText {
+  font-size: 1.50em;
+}
+
+#customMerch {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 15vh 0vh;
+}
+
+.merchImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 8px;
+  width: 15%;
+  height: 100px;
+  margin: 0 50px;
+}
+
+.merchText {
+  font-size: 1.50em;
+}
 
 .contactinfo {
     display: flex;
