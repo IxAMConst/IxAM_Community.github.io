@@ -1,8 +1,24 @@
 body {
+  position: relative;
   background-color: white;
   color: rgb(245, 47, 228);
-    font-size: 16px;
-    transition: background-color 1s ease;
+  font-size: 16px;
+  transition: background-color 1s ease;
+  z-index: 1;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Apply animation to the image */
+#animatedImage {
+  position: absolute; /* Ensure the image has a positioned parent */
+  z-index: -1; 
+  animation: spin 2s linear infinite; /* Rotate the image continuously */
+  width: 100px;
+  height: auto;
 }
 
 #clothingHeader {
