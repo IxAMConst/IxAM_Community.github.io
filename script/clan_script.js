@@ -1,3 +1,5 @@
+//* import { getRandomColor } from './script/clothing_script.js';
+
 /**
  * * important
  * ? maybes?

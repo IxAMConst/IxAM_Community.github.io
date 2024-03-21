@@ -1,3 +1,4 @@
+export { getRandomColor };
 /**
  * * important
  * ? maybes?
@@ -8,10 +9,12 @@
 
 
 // * to stop the color change when customers are hovering over viewport
+
+
 let body = document.querySelector('body');
 let backgroundColor = window.getComputedStyle(body).backgroundColor;
-
 body.addEventListener('mouseover', function () {
+    
     if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'white') {
         body.style.backgroundColor = 'purple';
     } else {
@@ -38,3 +41,4 @@ setInterval(function() {
     document.body.style.backgroundColor = getRandomColor();
 }, 3000); 
 console.log('Everything is running smoothly exe by IxAM');
+
