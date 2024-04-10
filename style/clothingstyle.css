@@ -8,8 +8,8 @@ body {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { transform: translateY(0px); }
+  to { transform: translateY(5px); }
 }
 
 /* Apply animation to the image */
@@ -28,6 +28,8 @@ body {
   margin-left: 38%;
   text-shadow: rgb(111, 0, 255) 10px 0 10px, rgb(111, 0, 255) 20px 10px 20px;
   font-size: 1.5rem;
+  border: solid;
+  border-radius: 8px;
 }
 
 nav {
@@ -126,17 +128,18 @@ nav {
 display: flex;
 justify-content: center;
 flex-direction: row;
-margin: 5vh 15vh 0vh;
+
 }
 
 .wWImage {
+  background: no-repeat center/100% url('/images/clothing_images/Main Page Images/Main Page Images/image14.png');
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid;
   border-radius: 8px;
-  width: 45%;
-  height: 120px;
+  width: 50%;
+  height: 200px;
   margin: 0 50px;
 }
 
@@ -145,19 +148,22 @@ margin: 5vh 15vh 0vh;
 }
 
 #purrfectGetups {
+  
   display: flex;
   margin: 5vh 15vh 0vh;
   flex-direction: row;
 }
 
 .getupsImage {
+  background: no-repeat center/100% url('/images/clothing_images/Purrfect Getups- women/Purrfect Getups- women/image13.png');
+  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid;
   border-radius: 8px;
-  width: 15%;
-  height: 100px;
+  width: 50%;
+  height: 200px;
   margin: 0 50px;
 }
 
@@ -168,17 +174,17 @@ margin: 5vh 15vh 0vh;
 #customMerch {
   display: flex;
   flex-direction: row;
-  margin: 5vh 15vh 0vh;
 }
 
 .merchImage {
+  background: no-repeat center/100% url('/images/clothing_images/Main Page Images/Main Page Images/image3.jpeg');
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid;
   border-radius: 8px;
-  width: 15%;
-  height: 100px;
+  width: 50%;
+  height: 250px;
   margin: 0 50px;
 }
 
