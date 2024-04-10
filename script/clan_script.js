@@ -36,3 +36,19 @@ window.addEventListener("scroll", function () {
   }
   console.log('scroll stopped at correct height by IxAM');
 });
+
+
+function changeColor () {
+  const colors = ['black', 'red', 'yellow'];
+  const lettering = document.querySelectorAll('body');
+
+  let currentIndex = 0;
+
+  setInterval(() => {
+    lettering.style.color = colors[currentIndex]; // Apply the current color to the innerHTML
+    currentIndex = (currentIndex + 1) % colors.length; // Increment the index and loop back to 0 when it reaches the end of the array
+  }, 4000); // Change color every 4 seconds (4000 milliseconds)
+}
+// Call the function to start changing colors
+
+changeColor();

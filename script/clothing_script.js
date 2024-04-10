@@ -27,7 +27,7 @@ console.log('customer hovering exe by IxAM');
 
 
 //* random color change with transition time in css
-function getRandomColor() {
+/*function getRandomColor() {
     // Generate random RGB values
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
@@ -40,5 +40,5 @@ setInterval(function() {
     // Set the background color to a random color
     document.body.style.backgroundColor = getRandomColor();
 }, 3000); 
-console.log('Everything is running smoothly exe by IxAM');
+console.log('Everything is running smoothly exe by IxAM');*/
 
