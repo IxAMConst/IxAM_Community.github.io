@@ -1,0 +1,178 @@
+/**
+ * *important
+ * ? maybes?
+ * ! yikes
+ * TODO:
+ * @param myparameter
+ */
+
+ body {
+  padding: 20px;
+  background: url("../images/matrix.jpg") no-repeat center / cover;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  transition: transform 0.3s, background 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  border-radius: 12px;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 15px rgba(255, 106, 0, 0.8);
+}
+
+/* Header */
+.headertwo {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 0px 0px 15px #00c6ff, 0px 0px 25px #0072ff;
+}
+
+/* Development Section */
+#develop {
+  color: #00ff7f;
+  text-shadow: 0px 0px 8px #00ff7f, 0px 0px 12px #00ff7f;
+}
+
+.develop {
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #00ff7f;
+  text-shadow: 0px 0px 12px #00ff7f, 0px 0px 20px #00ff7f;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 8px #00ff7f, 0px 0px 16px #00ff7f;
+  }
+  to {
+    text-shadow: 0px 0px 16px #00ff7f, 0px 0px 32px #00ff7f;
+  }
+}
+
+/* Tooltip Box */
+#boxOne {
+  color: white;
+  text-align: center;
+  border-radius: 25% 10%;
+  width: 150px;
+  height: 70px;
+  background: linear-gradient(45deg, #0731ee, #bef106);
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#boxOne:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+#boxOne::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 200px;
+  color: #00ff7f;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translate(0, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#boxOne:hover::before {
+  display: block;
+}
+
+/* Contact Information */
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #00c6ff;
+}
+
+a {
+  color: #00c6ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0072ff;
+}
+
+a[href^="mailto"]::before {
+  content: "📭 ";
+}
+
+a[href^="tel"]::before {
+  content: "📞 ";
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  #boxOne {
+    width: 120px;
+    height: 60px;
+  }
+}

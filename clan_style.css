@@ -1,0 +1,178 @@
+/**
+ * * important
+ * ? maybes?
+ * ! yikes
+ * TODO:
+ *  @param myparameter
+ */
+
+ body {
+  color: #ffffff;
+  background-image: url('../images/IxAM_Logo.PNG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000;
+  font-family: "Anton", sans-serif;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff4500;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height dynamically */
+  background: linear-gradient(90deg, #000000, #1a1a1a, #333333);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Add padding to space out the content */
+  box-shadow: 0 0 15px #ff4500, 0 0 30px #ff0000;
+  border: none; /* Remove the solid border */
+}
+
+nav a {
+  font-family: "Lobster", sans-serif;
+  margin: 0 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff0239, #ff6a00);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff6a00, #ff0239);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
+
+nav span {
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff0239, #ff6a00);
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px #ff4500, 0 0 30px #ff0000;
+}
+
+/* About Section */
+.abouts {
+  margin: 2% 10%;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px #ff0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #007bff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: linear-gradient(45deg, #1e1e2f, #2b2b4b, #1e1e2f);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Titles */
+#gTContainer {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 10%;
+}
+
+#gameTitles, #gameTitles2 {
+  margin: 5% 2%;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #ff0000, 0px 0px 20px #ff4500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #007bff;
+  border-radius: 12px;
+  padding: 1rem;
+  background: linear-gradient(45deg, #1e1e2f, #2b2b4b, #1e1e2f);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+#heading {
+  display: flex;
+  font-family: "Permanent Marker", sans-serif;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2.5em;
+  text-shadow: 0px 0px 10px #ff0239, 0px 0px 20px #ff4500;
+}
+
+/* Testimonials Section */
+.testimonials {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #ff0239;
+  box-shadow: 0 0 15px #ff4500, 0 0 30px #ff0000;
+}
+
+/* Footer */
+.copyright {
+  text-align: center;
+  color: #ff6a00;
+  text-shadow: 0px 0px 10px #ff4500;
+}
+
+/* Discord Link */
+.discordLink {
+  margin: 2% 35%;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #007bff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #007bff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: linear-gradient(45deg, #1e1e2f, #2b2b4b, #1e1e2f);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.discordLink:hover {
+  color: #ff0239;
+  text-shadow: 0px 0px 15px #ff4500;
+  box-shadow: 0 0 20px #ff0000;
+}
+
+.linkColor:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #ff0239, 0px 0px 25px #ff4500;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  #gameTitles, #gameTitles2 {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
